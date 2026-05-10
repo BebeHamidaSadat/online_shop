@@ -142,7 +142,7 @@
            <div class="d-flex gap-2 flex-column flex-sm-row">
             <input type="search"
             id="searchInput" class="form-control"
-            placeholder="Search products...">
+            placeholder="Search...">
            </div>
     <select id="categoryFilter" class="form-select">
                 <option value="all">All Catagories</option>
@@ -151,13 +151,23 @@
            </div>
 
            <!-- Product Cards  -->
-            <div id="ProductContainer" class="row g-4">
+            <div class="row mt-4 g-4"
+             id="productContainer" 
+             aria-live="polite">
 
               <!-- JS PRODUCTS HERE  -->
             </div>
         </div>
        </section>
-
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Shopping Cart</h2>
+    <div id="cartItems"></div>
+    <h4 class="mt-4">Total:
+      $<span id="cartTotal">0</span>
+    </h4>
+  </div>
+</section>
        <!-- SHOPOING CART  -->
         <section id="cart" class="py-5 bg-light">
           <div class="container">
